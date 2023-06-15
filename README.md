@@ -15,7 +15,8 @@ Thank you for visiting our repository. Please note that we are currently undergo
 ## Table of contents
 
 - [Preparation](https://github.com/GaboCapo/ChatGPTConverter#preparation)
-- 
+- [Generate the html file](https://github.com/GaboCapo/ChatGPTConverter#generate-the-html-file)
+- [Download MD files](https://github.com/GaboCapo/ChatGPTConverter#download-md-files)
 
 
 ## Preparation
@@ -43,10 +44,50 @@ The project is actually nothing more than a modified version of the `chat.html` 
 ---
 
 
+## Generate the html file
+
+We will now create an individual HTML file that is customized to your chat history. This is done with the **helper script** which is based on an [.sh Script](https://en.wikipedia.org/wiki/Shell_script). [²](https://en.wikipedia.org/wiki/Bourne_shell)
+
+From this point you can clone the repository and paste your extracted export files ( `conversations.json` must be included ) into the main project directory.
+
+Run the command, `chmod +x helper.sh` in the project directory to make the file executable.
+
+After that you can execute the script with `./helper.sh`
+
+The script first asks which method of export should be selected.
+
+Option 1 = Without Markdown / Frontmatter Header 
+This option creates an export file **without** the frontmatter header.
+
+Option 2 = With Markdown / Frontmatter Header
+This option creates an export file **with** the Frontmatter Header which has the following format:
+```
+---
+title: 
+create_time: 
+update_time: 
+plugin_ids: null
+id: 
+moderation_results: 
+---
+```
+
+An HTML file will be generated in the same folder.
+This can be opened with a browser just like the original `chat.hmtl` file. 
 
 
+## Download MD Files
 
 
+![image](https://github.com/GaboCapo/ChatGPTConverter/assets/39612138/ff3aa410-c93c-4287-abbf-2b47d3924c0a)
 
 
+![image](https://github.com/GaboCapo/ChatGPTConverter/assets/39612138/a8f58f94-1d0c-405f-80d3-3c9769e93c02)
 
+When you have opened the created HTML file with your browser you can click on 'Export all to md Files' to download the MD files as single .md files.
+
+Confirm the message 'Download multiple files' in the browser with 'Allow'.
+
+Now you can save the files individually and also change the name of the file. 
+
+Have fun!
