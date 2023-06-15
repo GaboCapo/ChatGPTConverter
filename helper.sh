@@ -129,6 +129,17 @@ moderation_results: ${conversation.moderation_results}
     return mdContent;
 }'
 
+
+# Function to format conversation content
+function formatContent() {
+    local content="$1"
+    formatted_content="${content//</\&lt;}"
+    formatted_content="${formatted_content//>/\&gt;}"
+    formatted_content="${formatted_content//≤/\&le;}"
+    formatted_content="${formatted_content//≥/\&ge;}"
+    echo "$formatted_content"
+}
+
 code_part_4='
 
 // Function to download a file
@@ -145,15 +156,17 @@ function downloadFile(filename, content) {
 // Export all conversations to separate .md files
 function exportToMdFiles() {
     for (var i = 0; i < jsonData.length; i++) {
-        var conversation = jsonData[i];
-        var mdContent = convertToMarkdown(conversation);
-        var filename = conversation.title + ".md";
-        var counter = 1;
-        while (filenameExists(filename)) {
-            filename = conversation.title + "-" + counter + ".md";
-            counter++;
-        }
-        downloadFile(filename, mdContent);
+        setTimeout(function(i) {
+            var conversation = jsonData[i];
+            var mdContent = convertToMarkdown(conversation);
+            var filename = conversation.title + ".md";
+            var counter = 1;
+            while (filenameExists(filename)) {
+                filename = conversation.title + "-" + counter + ".md";
+                counter++;
+            }
+            downloadFile(filename, mdContent);
+        }, i * 2000, i); // 2000ms delay between each download
     }
 }
 
@@ -204,9 +217,9 @@ filename="$(date +'%Y-%m-%d-%H%M%S')-chat.html"
 
 # Assembling the complete code
 if [ "$version" = "1" ]; then
-    code="$code_part_1$(cat conversations.json)$code_part_2$code_part_3_without_header$code_part_4"
+    code="$code_part_1$(formatContent "$(cat conversations.json)")$code_part_2$code_part_3_without_header$code_part_4"
 elif [ "$version" = "2" ]; then
-    code="$code_part_1$(cat conversations.json)$code_part_2$code_part_3_with_header$code_part_4"
+    code="$code_part_1$(formatContent "$(cat conversations.json)")$code_part_2$code_part_3_with_header$code_part_4"
 else
     echo "Invalid version selected. Please choose either 1 or 2."
     exit 1
