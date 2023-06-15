@@ -4,6 +4,11 @@
 
 <p align="center"><strong>This tool enables the conversion of chat data from ChatGPT into Markdown format.</strong>
 
+## Table of contents
+
+- [Preparation](https://github.com/GaboCapo/ChatGPTConverter#preparation)
+- 
+
 
 ## Preparation
 
