@@ -2,3 +2,7 @@
 ---
 
 @import "{{ site.theme }}";
+
+details > summary:first-of-type {
+    display: list-item;
+}
