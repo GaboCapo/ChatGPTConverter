@@ -91,4 +91,10 @@ Confirm the message 'Download multiple files' in the browser with 'Allow'.
 
 Now you can save the files individually and also change the name of the file. 
 
+## Automatic download
+
+If you want the files to be downloaded automatically without clicking every time you need to disable the option 'Ask for location before downloading files' in the browser settings. 
+If this is enabled, the files can be saved one after the other.
+
+
 Have fun!
