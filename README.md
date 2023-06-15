@@ -8,9 +8,9 @@ Thank you for visiting our repository. Please note that we are currently undergo
 
 ![ChatGPTConverterSocialImage](https://github.com/GaboCapo/ChatGPTConverter/assets/39612138/501f6fb2-7578-453c-8651-f00db84bc58f)
 
-<h1 align="center">ChatGPTConverter</h1>
+# ChatGPTConverter
 
-<p align="center"><strong>This tool enables the conversion of chat data from ChatGPT into Markdown format.</strong>
+This tool enables the conversion of chat data from ChatGPT into Markdown format
 
 ## Table of contents
 
@@ -46,7 +46,7 @@ The project is actually nothing more than a modified version of the `chat.html` 
 
 ## Generate the html file
 
-We will now create an individual HTML file that is customized to your chat history. This is done with the **helper script** which is based on an <a href="https://en.wikipedia.org/wiki/Shell_script" target="_blank">.sh Script</a> <a href="https://en.wikipedia.org/wiki/Bourne_shell" target="_blank">²</a>
+We will now create an individual HTML file that is customized to your chat history. This is done with the **helper script** which is based on an [.sh Script](https://en.wikipedia.org/wiki/Shell_script). [²](https://en.wikipedia.org/wiki/Bourne_shell)
 
 
 From this point you can clone the repository and paste your extracted export files ( `conversations.json` must be included ) into the main project directory.
