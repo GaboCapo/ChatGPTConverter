@@ -14,9 +14,9 @@ This tool enables the conversion of chat data from ChatGPT into Markdown format
 
 ## Table of contents
 
-- [Preparation](https://github.com/GaboCapo/ChatGPTConverter#preparation)
-- [Generate the html file](https://github.com/GaboCapo/ChatGPTConverter#generate-the-html-file)
-- [Download MD files](https://github.com/GaboCapo/ChatGPTConverter#download-md-files)
+- [Preparation](#preparation)
+- [Generate the html file](#generate-the-html-file)
+- [Download MD files](#download-md-files)
 
 
 ## Preparation
