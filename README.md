@@ -46,7 +46,8 @@ The project is actually nothing more than a modified version of the `chat.html` 
 
 ## Generate the html file
 
-We will now create an individual HTML file that is customized to your chat history. This is done with the **helper script** which is based on an [.sh Script](https://en.wikipedia.org/wiki/Shell_script). [²](https://en.wikipedia.org/wiki/Bourne_shell)
+We will now create an individual HTML file that is customized to your chat history. This is done with the **helper script** which is based on an <a href="https://en.wikipedia.org/wiki/Shell_script" target="_blank">.sh Script</a> <a href="https://en.wikipedia.org/wiki/Bourne_shell" target="_blank">²</a>
+
 
 From this point you can clone the repository and paste your extracted export files ( `conversations.json` must be included ) into the main project directory.
 
