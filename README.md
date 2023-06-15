@@ -89,7 +89,6 @@ When you have opened the created HTML file with your browser you can click on 'E
 
 Confirm the message 'Download multiple files' in the browser with 'Allow'.
 
-Now you can save the files individually and also change the name of the file. 
 
 ## Automatic download
 
