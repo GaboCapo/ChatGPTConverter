@@ -38,7 +38,7 @@ We will now create an individual HTML file that is customized to your chat histo
 From this point you can run this command:
 
 ```
-mkdir ChatGPTConverter && cd ChatGPTConverter && curl -O https://github.com/GaboCapo/ChatGPTConverter/blob/main/helper.sh
+mkdir ChatGPTConverter && cd ChatGPTConverter && curl -O https://raw.githubusercontent.com/GaboCapo/ChatGPTConverter/main/helper.sh
 ```
 
 to create a folder called `ChatGPTConverter` and download the `helper.sh` file to this folder.
