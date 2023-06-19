@@ -101,6 +101,9 @@ Have fun!
 ### Code Quality Note ⚠️
 As of Jun 2023, **it should be noted that the code does not claim to be complete and should be checked yourself if it is used productively!** This is a hobby project and everyone is invited to extend the project.
 
+### Large Files
+For large `conversations.jsons` files ( in my test about 30 MB ) it may take a few minutes depending on your computer. This is due to the processing procedures.
+
 ### Chat GPT Plugin Compatibility
 Since there are numerous plugins for ChatGPT and they partly have different output forms, it is not possible to consider them directly. If there are special wishes you are welcome to think about an implementation and contribute to the project.
 
